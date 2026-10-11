@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e0e" />
+
+  <title id="page-title">Hyraarchitects</title>
+  <meta name="description" content="Hyraarchitects — a full-service architecture and construction studio designing spaces and building legacies." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title"       content="Hyraarchitects" />
+  <meta property="og:description" content="Designing Spaces. Building Legacies." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (placeholder path, edit in constants.js) -->
+  <link rel="icon" type="image/x-icon" id="favicon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__mark" id="preloader-mark">H</span>
+      <span class="preloader__count" id="preloader-count">0%</span>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" id="brand-link">
+        <span class="brand__mark" id="brand-mark">H</span>
+        <span class="brand__name" id="brand-name">Hyraarchitects</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="nav__list" id="nav-list"></ul>
+      </nav>
+
+      <div class="nav__right">
+        <a href="#contact" class="btn btn--ghost btn--sm" id="nav-cta">Start a Project</a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__inner">
+      <p class="eyebrow reveal" id="hero-eyebrow"></p>
+      <h1 class="hero__title reveal" id="hero-title"></h1>
+      <p class="hero__subtitle reveal" id="hero-subtitle"></p>
+
+      <div class="hero__cta reveal">
+        <a href="#contact" class="btn btn--primary" id="hero-cta-primary"></a>
+        <a href="#projects" class="btn btn--ghost-light" id="hero-cta-secondary"></a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" id="hero-scroll-hint">
+      <span class="hero__scroll-text"></span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="" alt="Hyraarchitects studio" id="about-image" />
+        <span class="about__badge">
+          <strong id="about-founded-year"></strong>
+          <small>Est.</small>
+        </span>
+      </div>
+
+      <div class="about__copy">
+        <p class="eyebrow reveal" id="about-eyebrow"></p>
+        <h2 class="section__title reveal" id="about-title"></h2>
+
+        <div class="about__paragraphs reveal" id="about-paragraphs"></div>
+
+        <div class="about__pillars reveal" id="about-pillars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section section--alt services" id="services">
+    <div class="container">
+      <header class="section__header">
+        <p class="eyebrow reveal" id="services-eyebrow"></p>
+        <h2 class="section__title reveal" id="services-title"></h2>
+        <p class="section__subtitle reveal" id="services-subtitle"></p>
+      </header>
+
+      <div class="services__grid reveal" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <header class="section__header section__header--row">
+        <div>
+          <p class="eyebrow reveal">Selected Work</p>
+          <h2 class="section__title reveal">A portfolio in materials.</h2>
+        </div>
+
+        <div class="projects__filters reveal" id="project-filters"></div>
+      </header>
+
+      <div class="projects__grid reveal" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section stats" id="stats">
+    <div class="container">
+      <header class="section__header">
+        <p class="eyebrow reveal" id="stats-eyebrow"></p>
+        <h2 class="section__title reveal" id="stats-title"></h2>
+      </header>
+
+      <div class="stats__grid reveal" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="section section--alt team" id="team">
+    <div class="container">
+      <header class="section__header">
+        <p class="eyebrow reveal" id="team-eyebrow"></p>
+        <h2 class="section__title reveal" id="team-title"></h2>
+      </header>
+
+      <div class="team__grid reveal" id="team-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <header class="section__header">
+        <p class="eyebrow reveal" id="testimonials-eyebrow"></p>
+        <h2 class="section__title reveal" id="testimonials-title"></h2>
+      </header>
+
+      <div class="testimonials__viewport reveal" id="testimonials-viewport">
+        <button class="testimonials__nav testimonials__nav--prev" id="test-prev" aria-label="Previous testimonial">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="testimonials__track" id="testimonials-track"></div>
+
+        <button class="testimonials__nav testimonials__nav--next" id="test-next" aria-label="Next testimonial">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="testimonials__dots" id="testimonials-dots"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__intro">
+        <p class="eyebrow reveal" id="contact-eyebrow"></p>
+        <h2 class="section__title reveal" id="contact-title"></h2>
+        <p class="section__subtitle reveal" id="contact-subtitle"></p>
+
+        <ul class="contact__info" id="contact-info"></ul>
+      </div>
+
+      <form class="contact__form reveal" id="contact-form" novalidate>
+        <div class="form-grid" id="form-fields"></div>
+        <button type="submit" class="btn btn--primary btn--lg" id="contact-submit">
+          <span id="contact-submit-label">Send Enquiry</span>
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark" id="footer-brand-mark">H</span>
+        <span class="footer__brand-name" id="footer-brand-name">Hyraarchitects</span>
+        <p class="footer__tagline" id="footer-tagline">Designing Spaces. Building Legacies.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <ul id="footer-nav-list"></ul>
+      </nav>
+
+      <div class="footer__social" id="footer-social"></div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small id="footer-copyright"></small>
+      <small id="footer-rights"></small>
+    </div>
+  </footer>
+
+  <!-- ===================== PROJECT DETAIL MODAL ===================== -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button class="modal__close" data-close-modal aria-label="Close project details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal__media">
+        <img src="" alt="" id="modal-image" />
+      </div>
+      <div class="modal__body">
+        <span class="modal__tag" id="modal-tag"></span>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <ul class="modal__meta">
+          <li><span>Category</span><strong id="modal-category"></strong></li>
+          <li><span>Location</span><strong id="modal-location"></strong></li>
+          <li><span>Year</span>    <strong id="modal-year"></strong></li>
+        </ul>
+        <p class="modal__summary" id="modal-summary"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="constants.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
